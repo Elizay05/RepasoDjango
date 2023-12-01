@@ -1,0 +1,16 @@
+{% extends 'tienda/base.html' %}
+{% load static %}
+
+{% block titulo %}Inicio{% endblock %}
+
+{% block contenedor %}
+    <h1 style="color: red;">Inicio</h1>
+    <p>Datos de la sesión: 
+        <br>
+        ID: {{ request.session.logueo.id }}<br>
+        Nombre: {{ request.session.logueo.nombre }}<br>
+        Rol: {{ request.session.logueo.rol }}<br>
+        <a class="btn btn-outline-success" href="">Cerrar Sesión</a>
+    </p>
+{% endblock %}
+    
